@@ -1,0 +1,231 @@
+html {
+     font-family: 'poppins';
+     font-size: 70%;
+}
+
+
+body{
+    margin: 0;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header .navbar{
+    display: grid;
+    grid-template-columns:180px auto;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between ;
+    margin: 2em;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    position: unset;
+    background: none;
+
+}
+ nav ul{
+   list-style-type: none; 
+   display: flex;
+   margin: 0;
+ }
+
+ .primary-nav{
+    gap: 4em;
+   
+   }
+
+ .secondary-nav{
+    gap: 1em;
+    text-transform: uppercase ;
+    margin: 0;
+    padding: 5px 20px;
+    background: rgb(221, 221, 221);
+    border-radius: .6em;
+ }
+
+ .secondary-nav a{
+    font-size: 1.2rem;
+ }
+ 
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+
+    &:hover{
+        font-weight: bold; 
+     }
+}
+#logo{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase ;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+/* HERO SECTIONS */
+main{ 
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    margin-top: 4em;
+}
+/*left-columns */
+
+.left-col{
+    border-radius: 2em;
+    padding: 4em;
+    background:rgb(20, 20, 20);
+    width: 40em;
+    height: 40em;
+
+}
+.left-col p{
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+h1{ 
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;   
+}
+
+.hero-card{
+    background: white;
+    border-radius: .9em;
+    padding:2em;
+    width: 170px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between; 
+    position: relative;
+} 
+.hero-card a {
+    text-decoration: none;
+    margin: 0;
+    color: black;
+    font-weight:bold;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.hero-card p {
+    margin: 0;
+    color: grey; 
+    font-size: .9rem ;
+    padding: 10px;
+   }
+
+.herocard{
+display:grid;
+grid-auto-rows: 68px;
+grid-row-gap: 30em;
+
+}
+
+.carticon{
+    margin: 0;
+    transform: scaleX(-1);
+}
+
+
+/*right column*/
+
+.right-col{
+    flex-grow: 1;
+    display: grid;
+    gap:  1.2em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "right right"
+    "left  left";
+}
+
+.card{
+    border-radius: 2em;
+    background-size: 130%;
+    padding: 15px;
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-row-gap: 12em;    
+} 
+
+.card1{
+    grid-area: right;
+    background-image: url('../images/image1.jpg');
+    transition: background-size 800ms;
+}
+
+.card1:hover{
+    background-size: 135%;
+}
+
+.card a {
+    text-decoration: none;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 800px;
+}
+.card p{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.card2{
+    background: #b286fd;
+}
+.card3{
+    background: #b1f042;
+    
+}
+
+.title1, .title3 {  color: black;} 
+.title2 {  color: white;} 
+
+.card1, .card2, .card3 {
+    position: relative;
+} 
+
+.righticon {
+    position: absolute;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right:10px ;
+}
+
+
+.righticon1 {
+    position: absolute;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right:10px ;
+}
+.righticon2 {
+    position: absolute;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right:10px ;
+}
+
